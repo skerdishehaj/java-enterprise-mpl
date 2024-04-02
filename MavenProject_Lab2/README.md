@@ -4,7 +4,7 @@
 
 1. Download `maven`
 2. Create a directory where the project will be stored
-   - In out case let it be the  `Java Enterprise MPL`
+   - In our case let it be the  `Java Enterprise MPL`
 
       ```shell
       mkdir 'Java Enterprise MPL'
