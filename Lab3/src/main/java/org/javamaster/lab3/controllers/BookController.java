@@ -35,4 +35,16 @@ public class BookController {
         return new ResponseEntity<>(bookUpdated, HttpStatus.OK);
     }
 
+    @PostMapping
+    public ResponseEntity<Book> createBook(@RequestBody Book book) {
+        Book createdBook = bookService.createBook(book);
+        return new ResponseEntity<>(createdBook, HttpStatus.CREATED);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteBook(@PathVariable int id) {
+        bookService.deleteBook(id);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+
 }
