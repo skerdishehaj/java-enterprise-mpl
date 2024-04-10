@@ -30,7 +30,7 @@ public class BookService {
     if (existingBook == null) {
       return null;
     }
-
+    book.setId(id);
     return bookRepository.save(book);
   }
 
